@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  data-theme="light">
+<html data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <style>
-        .manrope{
+        .manrope {
             font-family: "Manrope", sans-serif;
+        }
+
+        .arrow {
+            /* rgb(171, 239, 95) */
         }
     </style>
 
@@ -33,7 +37,7 @@
             theme: {
                 extend: {
                     colors: {
-                        // primary: 'rgb(139, 195, 74)',
+                        arrow_color: 'rgb(171, 239, 95)',
                         // secondary: 'rgb(17, 17, 17)',
                         // body: 'rgb(248, 246, 243)',
                         // accent: 'rgb(106, 151, 57)',
@@ -57,9 +61,44 @@
 
 <body class="manrope">
 
-    <header>
+    <header class="max-w-screen-xl mx-auto">
 
-        <h1>Is My setup done </h1>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+
+                    <!-- my arrow  -->
+                    <i
+                        class=" w-5 h-5  border bg-arrow_color  text-center rounded-full fa-solid  transform rotate-45  fa-arrow-up"></i>
+                    <!-- -------------- -->
+                    <a class="btn btn-ghost font-extrabold text-xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+
+                    <div class="sm:block hidden">
+                        <i class="fa-solid text-gray-600 mr-5  fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping mr-5  text-gray-600"></i>
+                        <a class="btn bg-arrow_color  rounded-3xl">Book Consult
+                            <!-- arrow icon  -->
+                            <i
+                                class="border bg-black text-white rounded-full fa-solid w-6 h-6 transform rotate-45  fa-arrow-up"></i>
+                        </a>
+                    </div>
+                    <i class="fa-solid fa-bars sm:hidden"></i>
+                </div>
+            </div>
+        </nav>
+
+      
 
     </header>
 
