@@ -34,7 +34,7 @@
                 extend: {
                     colors: {
                         arrow_color: 'rgb(171, 239, 95)',
-                        // secondary: 'rgb(17, 17, 17)',
+                        title_color: '#212121',
                         // body: 'rgb(248, 246, 243)',
                         // accent: 'rgb(106, 151, 57)',
                         // body_neutral: 'rgb(51, 51, 51)',
@@ -43,10 +43,8 @@
                         // Poppins: 'Poppins',
                     },
                     backgroundImage: {
-                        //     leaf1: "url('./images/leaf01.png')",
-                        //     call_to_action: "url('./images/call.jpg')",
-                        //     testimonials: "url('./images/testimonials.jpg')",
-                        // },
+                            tarkata: "url('./assets/Vector.png')",
+                        
                     },
                 },
             }
@@ -103,24 +101,85 @@
             </div>
             <!-- text content  -->
             <div>
-                <h1 class="text-3xl sm:text-5xl  font-extrabold text-center my-6">A barn house of this design has a <br> striking appearance</h1>
-                <p class="text-center px-3 sm:px-12  text-gray-700 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <h1 class="text-3xl sm:text-5xl  font-extrabold text-center my-6">A barn house of this design has a <br>
+                    striking appearance</h1>
+                <p class="text-center px-3 sm:px-12  text-gray-700 mb-6">The barn house captivates with its blend of
+                    rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large
+                    windows that flood the space with natural light.</p>
 
                 <div class="text-center">
                     <a class="btn bg-arrow_color text-center  rounded-3xl">View Details
                         <!-- arrow icon  -->
-                        <i class="border bg-black text-white rounded-full fa-solid w-6 h-6 transform rotate-45  fa-arrow-up"></i>
+                        <i
+                            class="border bg-black text-white rounded-full fa-solid w-6 h-6 transform rotate-45  fa-arrow-up"></i>
                     </a>
                 </div>
-                
+
             </div>
         </section>
-
-
 
     </header>
 
     <main>
+
+         <!-- design section  -->
+
+         <section class="bg-[#F4F4F4] px-3 sm:px-16 py-16 bg-tarkata bg-no-repeat bg-left-top">
+
+            
+            <!-- container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+
+                <!-- text-content  -->
+                <div>
+
+                    <div class=" bg-white rounded-2xl px-4 mb-5 w-fit">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <button class=" inline font-semibold">About Us</button>
+                    </div>
+                    <!-- title  -->
+                    <h1 class="text-3xl sm:text-4xl font-extrabold fill-title_color mb-5">We design thoughtful, <br> liveable spaces</h1>
+                    <p class="text-gray-600 mb-5">The barn house captivates with its blend of rustic charm and <br>
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                    <!-- first card  -->
+
+                    <div class="p-4 flex gap-4 bg-white rounded-xl mb-6">
+                        <img src="./assets/commercial.png" alt="">
+                        <div>
+                            <h2 class="font-bold text-xl mb-3">Commercial</h2>
+                            <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+
+                    <!-- second card  -->
+
+                    <div class="p-4 flex gap-4 bg-white rounded-xl">
+                        <img src="./assets/residential.png" alt="">
+                        <div>
+                            <h2 class="font-bold text-xl mb-3">Residential</h2>
+                            <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- image content  -->
+
+                <div>
+                    <img src="./assets/Rectangle.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        
+
+
 
     </main>
 
