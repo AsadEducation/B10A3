@@ -23,6 +23,12 @@
         .manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        input::placeholder {
+            position: absolute;
+            top:0;
+            left:1;
+        }
     </style>
 
 
@@ -44,6 +50,7 @@
                     },
                     backgroundImage: {
                         tarkata: "url('./assets/Vector.png')",
+                        paper: "url('./assets/bg.jpg')",
 
                     },
                 },
@@ -314,7 +321,7 @@
 
         <!-- unique faq section  -->
 
-        <section class="hidden px-3 sm:px-16 py-16 mt-12 sm:mt-16">
+        <section class="hidden px-3 md:px-16 py-16 mt-12 md:mt-16">
             <section class="mt-10 md:mt-20">
                 <h1 class="text-3xl md:text-4xl text-center font-extrabold mb-12">Frequently Asked Questions
                 </h1>
@@ -334,7 +341,8 @@
                                 <div class="collapse-title text-xl font-medium">What unit types are available?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Studio to 3-bedroom apartments, offering 500-1500 sq. ft. with modern finishes, open layouts, and ample storage space.
+                                    <p>Studio to 3-bedroom apartments, offering 500-1500 sq. ft. with modern finishes,
+                                        open layouts, and ample storage space.
                                     </p>
                                 </div>
                             </div>
@@ -343,7 +351,8 @@
                                 <div class="collapse-title text-xl font-medium">What amenities does the building offer?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Residents enjoy a gym, rooftop terrace, co-working space, 24/7 concierge service, and secured access for all common areas. </p>
+                                    <p>Residents enjoy a gym, rooftop terrace, co-working space, 24/7 concierge service,
+                                        and secured access for all common areas. </p>
                                 </div>
                             </div>
                             <div class="collapse collapse-arrow border  border-blue-300">
@@ -351,7 +360,8 @@
                                 <div class="collapse-title text-xl font-medium">What are the lease terms offered?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Flexible lease options of 6, 12, and 24 months are available, catering to both short-term and long-term residents. </p>
+                                    <p>Flexible lease options of 6, 12, and 24 months are available, catering to both
+                                        short-term and long-term residents. </p>
                                 </div>
                             </div>
                             <div class="collapse collapse-arrow border  border-blue-300">
@@ -359,15 +369,18 @@
                                 <div class="collapse-title text-xl font-medium">Is parking available for residents?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Yes, secure underground parking is provided, along with bike storage and electric vehicle charging stations for residents’ convenience. </p>
+                                    <p>Yes, secure underground parking is provided, along with bike storage and electric
+                                        vehicle charging stations for residents’ convenience. </p>
                                 </div>
                             </div>
                             <div class="collapse collapse-arrow border  border-blue-300">
                                 <input type="radio" name="my-accordion-2" checked="checked" />
-                                <div class="collapse-title text-xl font-medium">Is the building close to public transportation?
+                                <div class="collapse-title text-xl font-medium">Is the building close to public
+                                    transportation?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Yes, it's within walking distance to major bus and subway lines, making commuting convenient and efficient.. </p>
+                                    <p>Yes, it's within walking distance to major bus and subway lines, making commuting
+                                        convenient and efficient.. </p>
                                 </div>
                             </div>
                             <div class="collapse collapse-arrow border  border-blue-300">
@@ -375,7 +388,8 @@
                                 <div class="collapse-title text-xl font-medium">Are utilities included in the rent?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>Utilities like water, gas, and trash are included. Electricity and internet are billed separately to residents. </p>
+                                    <p>Utilities like water, gas, and trash are included. Electricity and internet are
+                                        billed separately to residents. </p>
                                 </div>
                             </div>
                             <div class="collapse collapse-arrow border  border-blue-300">
@@ -383,7 +397,8 @@
                                 <div class="collapse-title text-xl font-medium">What security features are in place?
                                 </div>
                                 <div class="collapse-content">
-                                    <p>The building has 24/7 security, key fob access, surveillance cameras, and on-site management for enhanced resident safety. </p>
+                                    <p>The building has 24/7 security, key fob access, surveillance cameras, and on-site
+                                        management for enhanced resident safety. </p>
                                 </div>
                             </div>
 
@@ -403,18 +418,47 @@
         <!-- user form input section  -->
 
 
-        <section class="hidden px-3 sm:px-16 py-16 mt-12 sm:mt-16">
+        <section class="bg-paper px-3 sm:px-16 py-16 mt-12 sm:mt-16">
+
+            <!-- text content  -->
+
+            <div class="text-center mb-10  md:mb-20">
+                <div class="mx-auto  bg-arrow_color opacity-80 rounded-2xl px-4 mb-6 w-fit">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <button class=" inline font-semibold">Let's Connect</button>
+                </div>
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold fill-title_color mb-6">Let's Discuss Next Project
+                    </h1>
+                    <p class="text-gray-600 mb-6 px-3 sm:px-16 ">The barn house captivates with its blend of
+                        rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
+            <!-- form content  -->
+
+            <form  action="">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input class="md:col-span-1 col-span-2 p-4 w-full rounded-full" placeholder="FirstName*" type="text">
+                    <input class="md:col-span-1 col-span-2 p-4 w-full rounded-full" placeholder="LastName*" type="text">
+                    <input placeholder="PhoneNumber*" class="w-full rounded-full p-4 md:col-span-1 col-span-2" type="number">
+                    <input placeholder="Email*" class="w-full rounded-full p-4 md:col-span-1 col-span-2 " type="email">
+                    <input placeholder="Write Your Message Here" class="h-64 md:h-80 col-span-2 w-full rounded-3xl p-4" type="text">
+                </div>
+            </form>
+            <!-- ----------------------- -->
+            
+
+            <div>
+                <a class="btn bg-arrow_color text-center  rounded-3xl text-black w-full my-8 ">Send Mail
+                    <!-- arrow icon  -->
+                    <i
+                        class="border bg-black text-white rounded-full fa-solid w-6 h-6 transform rotate-45  fa-arrow-up"></i>
+                </a>
+                
+            </div>
 
         </section>
-
-
-
-
-
-
-
-
-
 
     </main>
 
